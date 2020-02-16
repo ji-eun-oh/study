@@ -12,12 +12,9 @@ public class Q8Gauss {
 		int n = stdIn.nextInt();
 		int sum = 0;
 		// 1~10 의 합은 (10+1)*5
-		if(n%2==0) {
-			sum = (n+1)*(n/2);
-		}else{
-			sum = n * ((n-1)/2) + n;
-		}
-		
+
+		sum = (n+1) * n / 2;
+	
 		System.out.println("1부터 "+ n +"까지의 합은 " + sum + "입니다." );
 	}
 
